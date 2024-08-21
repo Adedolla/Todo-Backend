@@ -1,0 +1,89 @@
+// function sayHello(){
+//     const {sayHello} = require('./utility')
+// }
+// sayHello()
+
+// console.log('Hello World');
+// const http = require('http')
+
+// console.log(http)
+// const server = http.createServer((req, res) =>{
+//    if(req.url === '/'){
+//     res.writeHead(200,{'content-type': 'text/plain'});
+//     res.end('welcome to my server')
+//    }if(req.url === '/rachel'){
+//     res.writeHead(200,{'content-type': 'text/plain'});
+//     res.end('Welcome rachel Happy Soul lol')
+//    }
+// })
+const PORT = 6000
+// server.listen(PORT, () =>{
+//     console.log(`server running on port: ${PORT}`)
+// })
+// 
+
+// const express = require('express');
+// const  route  = require('./route/userRouter');
+
+// const app = express()
+// app.use('/', route)
+
+// app.get('/', (req, res) =>{
+
+//     res.send('Server Homepage')
+// });
+
+// app.get('/adedolla', (req, res) =>{
+//     res.send('Hello to Adedolla')
+// });
+
+// app.listen(PORT, () =>{
+//     console.log(`Server running on ${PORT}`)
+// })
+
+
+route.post('/', (req, res)=>{
+    res.send('Router page from another page')
+})
+
+route.delete('/delete', (req, res)=>{
+    res.send('Router page delete !')
+})
+
+
+const app = express()
+app.use('/', route)
+
+app.get('/', (req, res) =>{
+
+    res.send('Server Homepage')
+});
+
+
+
+
+// function sayHello(){
+//     const {sayHello} = require('./utility')
+// }
+// sayHello()
+
+// console.log('Hello World');
+// const http = require('http')
+
+// console.log(http)
+// const server = http.createServer((req, res) =>{
+//    if(req.url === '/'){
+//     res.writeHead(200,{'content-type': 'text/plain'});
+//     res.end('welcome to my server')
+//    }if(req.url === '/rachel'){
+//     res.writeHead(200,{'content-type': 'text/plain'});
+//     res.end('Welcome rachel Happy Soul lol')
+//    }
+// })
+
+// server.listen(PORT, () =>{
+//     console.log(`server running on port: ${PORT}`)
+// })
+// 
+
+
