@@ -27,7 +27,7 @@ App.get('/', (req, res) =>{
 })
 
 
-const PORT = 7000
+const PORT = 8000
 
 
 
