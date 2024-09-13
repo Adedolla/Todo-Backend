@@ -15,7 +15,7 @@ const App = express()
 App.use(express.json())
 App.use(express.urlencoded({extended: false}))
 App.use(cors({
-    origin: ['https://my-todo-adedollas-projects.vercel.app/'],
+    origin: ['http://localhost:5173'],
     credentials:true
 }))
 
